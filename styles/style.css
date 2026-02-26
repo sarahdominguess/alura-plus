@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-de-fundo: #00030C;
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao: #167BF7;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-principal);
+}
