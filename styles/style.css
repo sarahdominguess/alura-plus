@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +8,16 @@
 :root {
     --cor-de-fundo: #00030C;
     --cor-principal: #FFFFFF;
-    --cor-secundaria: #C0C0C0;
+    --cor-secundaria: #F9F9F9;
+    --cor-terciaria: #C0C0C0;
     --cor-botao: #167BF7;
+    --cor-botao-hover: #3c92fa;
+
+    --fonte-principal: "Inter", sans-serif;
+    --fonte-weight-titulo: 700;
+    --fonte-weight-texto: 400;
+
+    --font-size-texto: 1rem;
 }
 
 body {
@@ -15,4 +25,74 @@ body {
     width: 100%;
     background-color: var(--cor-de-fundo);
     color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-weight-texto);
+}
+
+.conteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.primeiro {
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    text-align: center;
+}
+
+.primeiro__conteudo__titulo {
+    font-weight: var(--fonte-weight-titulo);
+    font-size: 1.75rem;
+    margin: 0 3.4rem;
+}
+
+.primeiro__conteudo__imagem {
+    margin: 1.4rem 0 4.5rem;
+}
+
+.primeiro__conteudo__botao {
+    color: var(--cor-principal);
+    background-color: var(--cor-botao);
+    border: 1px solid var(--cor-botao);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: var(--font-size-texto);
+    display: block;
+    padding: 1.25rem;
+    margin: 0 4.75rem 1rem;
+    transition: background-color 0.5s;
+}
+
+.primeiro__conteudo__botao:hover, .secundario__conteudo__link:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.botao__diferente {
+    background-color: transparent;
+    border-color: var(--cor-principal);
+}
+
+.botao__diferente:hover {
+    background-color: #ffffff7a;
+}
+
+.primeiro__conteudo__texto {
+    color: var(--cor-terciaria);
+    font-size: 0.75rem;
+}
+
+
+
+.secundario__conteudo__link {
+    color: var(--cor-principal);
+    background-color: var(--cor-botao);
+    border: 1px solid var(--cor-botao);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: var(--font-size-texto);
+    display: block;
+    transition: background-color 0.5s;
 }
