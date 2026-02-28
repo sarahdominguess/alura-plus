@@ -113,3 +113,28 @@ body {
     margin: 1.2rem 20rem 0 0;
     transition: background-color 0.5s;
 }
+
+.dispositivos {
+    font-weight: var(--fonte-weight-titulo);
+    justify-items: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+}
+
+.dispositivos__lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.dispositivos__lista__imagem {
+    margin: 2.5rem 0 1rem 0;
+}
+
+.dispositivos__lista__item {
+    font-size: 2rem;
+    text-align: center;
+}
