@@ -138,3 +138,34 @@ body {
     font-size: 2rem;
     text-align: center;
 }
+
+.rodape {
+    align-items: center;
+    text-align: center;
+    margin: 9rem 7.5rem 5.25rem;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-texto);
+    list-style-type: none;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.rodape__lista__link a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    margin: 1rem;
+    transition: color 0.3s;
+}
+
+.rodape__lista__link a:hover {
+    color: var(--cor-secundaria);
+}
+
+.rodape__texto {
+    color: var(--cor-terciaria);
+    font-size: 0.875rem;
+    margin: 0 0 1rem;
+}
